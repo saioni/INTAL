@@ -1,0 +1,44 @@
+1. (i) INTAL is a non-negative integer of arbitrary length. The integer is stored as a null-terminated string of ascii characters. It is represented as a string of decimal digits that are stored in big-endian style (most significant digit is at the end of the string).
+Example – integer 20 stored as – ‘2’ at s[0], ‘0’ at s[1] and null character at s[2].
+
+
+(ii)Int data type has limited range of values possible. Unsigned long long int can range from 0 to 18,446,744,073,709,551,615. This is the maximum number that we can use using int. 
+     INTAL can support up to 1000 digits in our implementation.
+
+
+(iii) Computation of probability, permutations and combinations. 
+     Example – To find probability of winning the prize with one ticket. The number of combinations of 50 numbers taken 6 at a time, “50 choose 6”, is 50!/((50-6)!6!). That number is 15,890,700, so the odds of winning are 1/15,890,700. These numbers can be represented easily by a C integer, but the computation of that number involves computing 50!:30,414,093,201,713,378,043,612,608,166,064,768,844,377,641,568,960,512,000 this number will not fit into even a 64 bit C integer.
+     INTAL can be applied in cryptology.
+
+
+2. Implementations:
+
+Addition – Brute Force approach implemented, padding of zeros for the smaller one and carry is added to each time addition is done.
+
+Difference – Brute Force implemented, Similarly, borrow is subtracted each time.
+
+Multiplication – Brute force, carry added each time.
+
+Comparison – strcmp function is used to compare to 2 intals.
+
+Mod – to compute intal1 mod intal2, difference function is used here, comparison made on the difference value and intal2 and based on it unpading function is called.
+
+Pow – multiplication function used here to compute power
+
+GCD – Mod function used here.
+
+Fibonacci – iterative approach, addition function is used here.
+
+Factorial – iterative approach, multiplication function is used here.
+
+Maximum, Minimum – Comparison function is used to find max, min respectively in the array.
+
+Search – Comparison function used here.
+
+Sort – Merge sort (O(nlogn)) is implemented, helper functions used – merge, merge sort
+
+Coin row problem – DP implemented.
+
+
+3)         b) Parallel computing to achieve faster result.
+
